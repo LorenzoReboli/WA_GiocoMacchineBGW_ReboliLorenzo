@@ -18,15 +18,19 @@ namespace WA_GiocoMacchineBGW
         bool vittoria = false;
         int v1, v2, ngiri,ntrag1, ntrag2, ntrag;
         bool ripeti = false;
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
         private void btn_quit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //faccio ripartire tutto
         private void btn_Restart_Click(object sender, EventArgs e)
         {
-           //faccio ripartire tutto
             vittoria = false;
             v1 =0;
             v2 = 0;
@@ -45,10 +49,6 @@ namespace WA_GiocoMacchineBGW
         }
 
         
-        public Form1()
-        {
-            InitializeComponent();
-        }
         private void btn_start_Click(object sender, EventArgs e)
         {
             //disabilito lo start e lo rendo invisibile
